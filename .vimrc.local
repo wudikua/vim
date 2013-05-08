@@ -1,0 +1,51 @@
+" Modeline and Notes {
+" vim: set foldmarker={,} foldlevel=0 foldmethod=marker spell:
+" }
+
+" Environment {
+    autocmd! BufWrite .vimrc.local source ~/.vimrc.local
+    autocmd! BufWrite .vimrc.bundles.local source ~/.vimrc.bundles.local
+
+    set t_Co=256
+" }
+
+" Key (re)Mappings {
+    " commentary {
+        " Fast edit .vimr.local{
+        "    map <silent> <Leader> ee :e ~/.vimrc.local<CR>
+        "    autocmd! BufWrite .vimrc.local source ~/.vimrc.local
+        " }
+
+        " Fast edit .vimr.bundle.local{
+        "    map <silent> <Leader> eb :e ~/.vimrc.bundles.local<CR>
+        " }
+
+        " INSERT mode motion
+        " map <C-J> <Down>
+        " map <C-K> <Up>
+        " map <C-L> <Right>
+        " map <C-H> <Left>
+    " }
+" }
+
+" UnBundle {
+" }
+
+" Plugins {
+
+     " neocomplcache {
+        let g:NeoComplCache_DisableAutoComplete = 1
+     " }
+
+" }
+
+" General {
+    "设置编码模式
+    set fileencodings=utf-8,gb18030,utf-16,big5
+
+    "底部状态栏"
+    let g:Powerline_symbols = 'fancy'
+
+    "底部命令行
+    set cmdheight=3
+" }
