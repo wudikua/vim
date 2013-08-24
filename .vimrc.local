@@ -37,6 +37,14 @@
         let g:NeoComplCache_DisableAutoComplete = 1
      " }
 
+     " dbext {
+        " Mysql
+        let g:dbext_default_profile_yu ='type=MYSQL:user=root:passwd=:dbname=Yu:host=localhost'
+        let g:dbext_default_profile_xxbase ='type=MYSQL:user=xxkj:passwd=123456:dbname=xxbase:host=192.168.1.10'
+        let g:dbext_default_profile_xxlog ='type=MYSQL:user=xxkj:passwd=123456:dbname=xxlog:host=192.168.1.10'
+        let g:dbext_default_profile_xxcrm ='type=MYSQL:user=xxkj:passwd=123456:dbname=xxcrm:host=192.168.1.10'
+     " }
+
 " }
 
 " General {
@@ -48,4 +56,7 @@
 
     "底部命令行
     set cmdheight=3
+
+    "背景颜色
+    set background=dark
 " }
